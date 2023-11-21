@@ -1,0 +1,116 @@
+#BackgroundDiv{
+    color: #FFFFFF;
+    background: url(Homepage-background-img.png) no-repeat center center/cover;
+    background-image: linear-gradient(180deg,  0%, #4F0707 100%);
+    background-repeat: no-repeat;
+    /*background-size: 2000px 995px;*/
+}
+
+.login{
+    
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 2rem;
+    
+}
+
+.create{
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px #FFFFFF solid;
+    padding: 4px;
+    border-radius: 2px;
+   
+}
+
+#NavBar{
+    text-align: right;
+    padding-right: 80px;
+    padding-top: 20px;
+}
+
+#LogoE{
+    font-size: 80px;
+    width: 100px;
+    text-align: center;
+    color: #EB2929;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-left: 900px;
+    padding: 10px;
+}
+
+#mainText{
+    text-align: center;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: medium;
+}
+
+#locationSearchBox{
+    text-align: center;
+    align-items: stretch;
+    margin-bottom: 500px;
+}
+
+#locationBox{
+    margin-left: -80px;
+    padding: 15px;
+    padding-right: 50px;
+    font-size: 18px;
+    padding-left: 50px;
+    color: #636F88;
+    margin-bottom: 100px;
+}
+
+#searchBox{
+    margin-left: 20px;
+    margin-top: -600px;
+    padding: 15px;
+    padding-right: 200px;
+    font-size: 18px;
+    padding-left: 50px;
+    color: #636F88;
+}
+
+#quickSearch{
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 11rem;
+}
+
+#typeOf{
+    text-align: left;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #8C96AB;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 11rem;
+    margin-top: -1rem;
+}
+
+.container 
+div{
+    background-color: #FFFFFF;
+    top: 636px;
+      margin: 15px;
+      width:500px;
+      height:200px;
+      overflow:hidden;
+      box-shadow: 5px 5px 5px #00000029;
+}
+
+.row1{
+    float: left;
+}
+
+.foodImage{
+    width: 200px;
+    height: 200px;
+}
+
+#cardRow{
+    margin-left: 159px;
+    margin-bottom: 600px;
+}
