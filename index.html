@@ -1,86 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-<div id="BackgroundDiv">
-    <header>
-        <nav>
-            <div id="NavBar">
-                <a class="login" href="#">Login</a>
-                <a class="create" href="#">Create an account</a>
-            </div>
-        </nav>
-    </header>
-    <h1 id="LogoE">e!</h1>
-    <h2 id="mainText">Find the best restaurants,caf&egrave;s, and bars</h2>
-    <div id="locationSearchBox">
-        <form>
-        <input type="text" id="locationBox" name="locationBox" value="Please type a location"/>
-        <input type="text" id="searchBox" name="searchBox" value="Search for restaurants" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage-Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <header
+      class="bg-image img-responsive"
+      style="
+        background-image: url('homepage-background.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100vw;
+        height: 50vh;
+        margin: 0;
+        padding: 0px;">
+      <div class="d-flex justify-content-end me-4 pt-2">
+        <a href="#" class="text-decoration-none text-white">Login</a>
+        <a
+          href="#"
+          class="ms-4 text-decoration-none text-white border border-white p-1"
+          >Create an account</a>
+      </div>
+      <div class="d-grid gap-3">
+        <div class="h1 position-absolute text-danger bg-light rounded-circle top-0 start-50 fw-bold lh-1 p-4 mt-5">e!</div>
+        <div class="col-sm-2 mt-5"></div>
+        <div class="h1 text-center text-white pt-5 mt-5">
+          Find the best restaurants,cafès, and bars
+        </div>
+        <form
+          class="row gx-3 gy-2 align-items-center d-flex justify-content-center">
+          <div class="col-sm-2 mt-4">
+            <input
+              type="text"
+              class="form-control rounded-0 responsive-true"
+              id="specificSizeInputSearch"
+              placeholder="Please type a location"/>
+          </div>
+          <div class="col-sm-3 mt-4">
+            <input
+              type="search"
+              class="form-control rounded-0 responsive-true"
+              placeholder="Search for restaurants"
+              aria-label="Search"/>
+          </div>
         </form>
-    </div>
-</div>
-<section style="margin-top: -470px;">
-    <p id="quickSearch"><b>Quick Searches</b></p>
-    <p id="typeOf">Discover restaurants by type of meal</p>
-</section>
-<div id="cardRow">
-<div class="container">
-    <div class="row1">
-      
-        <img class="foodImage" src="breakfast.png" alt="breakfast-image">
-    
-        <div style="margin-top: -180px; margin-left: 220px; word-wrap: break-word; padding: 20px; font-size: 20px;"><b>Breakfast</b> <br>
-            <span style="color: #8C96AB;">Start your day with<br> exclusive breakfast<br> options</span>
+      </div>
+    </header>
+    <div class="d-grid gap-3 mb-5 pb-5">
+    <div class="container">
+        <div>
+            <p class="fs-2 fw-bold mt-5">Quick Searches</p>
+            <p class="fs-5 text-black-50">Discover restaurants by type of meal</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            
+                            <div class="col-sm-4">
+                                <img class="" src="breakfast.png" alt="sans" width="200">
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-4">
+                                <h5 class="card-title">Breakfast</h5>
+                                <p class="card-text">Start your day with exclusive breakfast options</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            
+                            <div class="col-sm-4">
+                                <img class="" src="lunch.png" alt="sans" width="200">
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-4">
+                                <h5 class="card-title">Lunch</h5>
+                                <p class="card-text">Start your day with exclusive breakfast options</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            
+                            <div class="col-sm-4">
+                                <img class="" src="snacks.png" alt="sans" width="200">
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-4">
+                                <h5 class="card-title">Snacks</h5>
+                                <p class="card-text">Start your day with exclusive breakfast options</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row1">
-        <img class="foodImage" src="lunch.png" alt="lunch-image">
 
-        <div style="margin-top: -180px; margin-left: 220px; word-wrap: break-word; padding: 20px; font-size: 20px;"><b>Lunch</b> <br>
-            <span style="color: #8C96AB;">Start your day with<br> exclusive breakfast<br> options</span>
-        </div> 
-    
-    </div>
-    <div  class="row1">
-        <img class="foodImage" src="snacks.png" alt="snacks-image">
-        
-        <div style="margin-top: -180px; margin-left: 220px; word-wrap: break-word; padding: 20px; font-size: 20px;"><b>snacks</b> <br>
-            <span style="color: #8C96AB;">Start your day with<br> exclusive breakfast<br> options</span>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            
+                            <div class="col-sm-4">
+                                <img class="" src="dinner.png" alt="sans" width="200">
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-4">
+                                <h5 class="card-title">Breakfast</h5>
+                                <p class="card-text">Start your day with exclusive breakfast options</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            
+                            <div class="col-sm-4">
+                                <img class="" src="drinks.png" alt="sans" width="200">
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-4">
+                                <h5 class="card-title">Lunch</h5>
+                                <p class="card-text">Start your day with exclusive breakfast options</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            
+                            <div class="col-sm-4">
+                                <img class="" src="nightlife.png" alt="sans" width="200">
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-4">
+                                <h5 class="card-title">Snacks</h5>
+                                <p class="card-text">Start your day with exclusive breakfast options</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-    <div  class="row1">
-        <img class="foodImage" src="dinner.png" alt="dinner-image">
-        
-        <div style="margin-top: -180px; margin-left: 220px; word-wrap: break-word; padding: 20px; font-size: 20px;"><b>Dinner</b> <br>
-            <span style="color: #8C96AB;">Start your day with<br> exclusive breakfast<br> options</span>
-        </div>
-
-    </div>
-    <div  class="row1">
-        <img class="foodImage" src="drinks.png" alt="drinks-image">
-        
-        <div style="margin-top: -180px; margin-left: 220px; word-wrap: break-word; padding: 20px; font-size: 20px;"><b>Drinks</b> <br>
-            <span style="color: #8C96AB;">Start your day with<br> exclusive breakfast<br> options</span>
-        </div>
-
-    </div>
-    <div  class="row1">
-        <img class="foodImage" src="nightlife.png" alt="nightlife-image">
-        
-        <div style="margin-top: -180px; margin-left: 220px; word-wrap: break-word; padding: 20px; font-size: 20px;"><b>Nightlife</b> <br>
-            <span style="color: #8C96AB;">Start your day with<br> exclusive breakfast<br> options</span>
-        </div>
-
-    </div>
-</div>
-</div>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
