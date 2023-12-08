@@ -14,7 +14,7 @@
   <body>
     <div>
       <header
-        class="bg-image img-responsive py-1 px-5"
+        class="bg-image img-responsive py-1 px-5 greybottom container-fluid"
         style="
           background-image: linear-gradient(
               to top,
@@ -28,7 +28,7 @@
           height: 65vh;
         "
       >
-        <div class="logo img-responsive d-flex justify-content-between m-0 p-0">
+        <!-- <div class="logo img-responsive d-flex justify-content-between m-0 p-0">
           <div class="justify-content-start">
             <img src="logo.png" alt="Netflix" width="180vw" height="100vh" />
           </div>
@@ -48,6 +48,21 @@
               <button class="btn btn-danger sign-in-btn">Sign in</button>
             </div>
           </div>
+        </div> -->
+        <div class="d-flex bd-highlight mb-3">
+          <div class="p-2 bd-highlight flex-grow-1"><img src="logo.png" alt="Netflix" width="180vw" height="100vh" /></div>
+          <div class="p-2 bd-highlight"><select
+            class="form-select bg-transparent text-light d-flex mx-5"
+            name="languageselect"
+            aria-label="form-select-lg"
+            style="width: 120px; height: 40px"
+          >
+            <option selected lang="en" label="English" value="en-US">
+              English
+            </option>
+            <option lang="es" label="हिन्दी" value="es-US">हिन्दी</option>
+          </select></div>
+          <div class="p-2 bd-highlight"><button class="btn btn-danger sign-in-btn">Sign in</button></div>
         </div>
 
         <div class="text-center">
@@ -78,85 +93,75 @@
           </form>
         </div>
       </header>
-      <div
-        class="container bg-black px-5 justify-content-center m-0"
-        style="width: 100vw"
-      >
-        <div class="mt-2 row justify-content-center">
-          <div
-            class="col p-5 mb-1 h1 text-center text-white fw-bolder text-wrap"
-            style="width: 100vw; height: 40vh">
-            Enjoy your TV.
-            <div class="h4 text-break text-wrap">
-              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
-              Blu-ray players and more.
+      
+      <div class="d-flex flex-column">
+         <!--1: BLOCK--> 
+         <div class="greybottom d-flex bd-highlight">
+          <!--LEFT: DIV--> 
+            <div class="p-5 mt-5 flex-fill bd-highlight text-sm-center text-center text-md-start main-col-text">
+              <div class="h1 main-title">Enjoy your TV.</div>
+              <div class="h4">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                Blu-ray players and more.</div>
             </div>
-          </div>
-          <div class="col embed-responsive embed-responsive-16by9 col-sm">
-            <iframe
-              class="embed-responsive-item p-5 m-5"
-              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v "
-            ></iframe>
-          </div>
-        </div>
+             <!--RIGHT: DIV--> 
+            <div class="p-2 flex-fill bd-highlight">
+              <iframe class="embed-responsive-item p-5 m-5"
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" allowfullscreen></iframe>
+            </div>
       </div>
-      <div class="mt-2 row row justify-content-between">
-        <img
+         <!--2: BLOCK-->
+         <div class="greybottom d-flex bd-highlight">
+          <!--LEFT: DIV--> 
+            <div class="p-2 flex-fill bd-highlight mx-5">
+              <img
           class="img-responsive col-4"
           src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
           alt="image"
           width="600vw"
-          height="400vh"
+          height="300vh"
         />
-        <div
-          class="p-5 mb-1 h1 text-center text-white bg-black fw-bolder text-wrap col-4"
-          style="width: 100vw; height: 80vh"
-        >
-          Download your shows to watch offline.
-          <div class="h4 text-break text-wrap">
-            Save your favourites easily and always have something to watch.
-          </div>
-        </div>
-      </div>
-      <div
-        class="container bg-black px-5 justify-content-center m-0"
-        style="width: 100vw"
-      >
-        <div class="mt-2 row justify-content-center">
-          <div
-            class="col p-5 mb-1 h1 text-center text-white fw-bolder text-wrap"
-            style="width: 100vw; height: 40vh">
-            Watch everywhere.
-            <div class="h4 text-break text-wrap">
-              Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
             </div>
-          </div>
-          <div class="col embed-responsive embed-responsive-16by9 col-sm">
-            <iframe
-              class="embed-responsive-item p-5 m-5"
-              src="https://giphy.com/gifs/fire-tv-firetv-amazonfiretv-QXCmokDXM7WGNli8aa?utm_source=iframe&utm_medium=embed&utm_campaign=Embeds&utm_term"
-            ></iframe>
-          </div>
-        </div>
+             <!--RIGHT: DIV--> 
+            <div class="p-5 mt-5 flex-fill bd-highlight text-sm-center text-center text-md-start main-col-text">
+              <div class="h1 main-title">Download your shows to watch offline.</div>
+              <div class="h4">Save your favourites easily and always have something to watch.</div>
+            </div>
       </div>
-      <div class="mt-2">
-        <img
+           
+         <!--3: BLOCK-->
+         <div class="greybottom d-flex bd-highlight">
+          <!--LEFT: DIV--> 
+            <div class="p-5 mt-5 flex-fill bd-highlight text-sm-center text-center text-md-start main-col-text">
+              <div class="h1 main-title">Watch everywhere.</div>
+              <div class="h4">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</div>
+            </div>
+             <!--RIGHT: DIV--> 
+            <div class="p-2 flex-fill bd-highlight">
+              <iframe src="https://giphy.com/embed/QXCmokDXM7WGNli8aa" width="400" height="270" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+            </div>
+      </div>
+         <!--4: BLOCK-->
+         <div class="greybottom d-flex bd-highlight">
+          <!--LEFT: DIV--> 
+            <div class="p-2 flex-fill bd-highlight mx-5">
+              <img
           class="img-responsive"
           src="AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png"
           alt="image"
           width="600vw"
           height="400vh"
         />
-        <div
-          class="p-5 mb-1 h1 text-center text-white bg-black fw-bolder text-wrap"
-          style="width: 100vw; height: 80vh"
-        >
-        Create profiles for children.
-          <div class="h4 text-break text-wrap">
-            Send children on adventures with their favourite characters in a space made just for them—free with your membership.
-          </div>
-        </div>
+            </div>
+             <!--RIGHT: DIV--> 
+            <div class="p-5 mt-5 flex-fill bd-highlight text-sm-center text-center text-md-start main-col-text">
+              <div class="h1 main-title">Create profiles for children.</div>
+              <div class="h4">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</div>
+            </div>
       </div>
+      </div>
+      
+      
+     
       <div class="mt-2">
         <div
           class="p-5 mb-1 h1 text-center text-white fw-bolder bg-black"
@@ -257,7 +262,7 @@
               <!-- Grid container -->
               <div class="container p-4 pb-0">
                 <!-- Section: Links -->
-                <section class="">
+                <section>
                   <!--Grid row-->
                   <div class="row">
                     <!-- Grid column -->
@@ -343,8 +348,8 @@
             </footer>
             <!-- Footer -->
           </div>
-          <div>
-            <select
+          <div class="d-flex justify-content-start">
+            <div class="p-2 bd-highlight"><select
               class="form-select bg-transparent text-secondary border border-secondary d-flex mx-5 rounded-0 m-3"
               name="languageselect"
               aria-label="form-select-lg"
@@ -354,9 +359,11 @@
                 English
               </option>
               <option lang="es" label="हिन्दी" value="es-US">हिन्दी</option>
-            </select>
+            </select></div>
+            <div class="text-secondary fs-6 text-left p-4">Company India</div>
+            
           </div>
-          <div class="text-secondary fs-6 text-left float-left">Company India</div>
+          
         </div>
         </div>
       </div>
