@@ -1,3 +1,0 @@
-# Edureka-Assignments
-
-bootstrap
